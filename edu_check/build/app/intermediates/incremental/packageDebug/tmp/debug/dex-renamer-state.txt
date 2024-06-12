@@ -1,0 +1,4 @@
+#Wed Jun 12 08:54:15 CEST 2024
+base.0=C\:\\Users\\filia\\AndroidStudioProjects\\edu_check\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
