@@ -52,7 +52,10 @@ class _CreateUserPageState extends State<CreateUserPage> {
         'password': _motDePasseController.text,
         'role': {'id': _selectedRoleId},
         //'classe': {'id': _selectedClasseId},
-        if (_classeRequired) 'classe': {'id': _selectedClasseId}, // Ajout conditionnel de la classe
+        if (_classeRequired)
+          'classe': {
+            'id': _selectedClasseId
+          }, // Ajout conditionnel de la classe
       };
 
       try {
@@ -74,7 +77,8 @@ class _CreateUserPageState extends State<CreateUserPage> {
                 TextButton(
                   onPressed: () {
                     Navigator.of(context).pop();
-                    Navigator.of(context).pop(); // Retourne à la page précédente
+                    Navigator.of(context)
+                        .pop(); // Retourne à la page précédente
                   },
                   child: Text('Fermer'),
                 ),
@@ -150,7 +154,13 @@ class _CreateUserPageState extends State<CreateUserPage> {
                 onChanged: (String? value) {
                   setState(() {
                     _selectedRoleId = value;
-                    _classeRequired = value == 'ETUDIANT';
+                    if (value == '1') {
+                      _classeRequired =
+                          true; // Par exemple, si '1' correspond à un rôle nécessitant une classe
+                    } else {
+                      _classeRequired =
+                          false; // Sinon, le champ classe n'est pas requis
+                    }
                   });
                 },
                 items: _roles.map<DropdownMenuItem<String>>((Role role) {
@@ -199,5 +209,4 @@ class _CreateUserPageState extends State<CreateUserPage> {
       ),
     );
   }
-
 }
