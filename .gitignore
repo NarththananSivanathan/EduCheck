@@ -1,0 +1,56 @@
+# ========================
+# Java / Spring Boot (Maven)
+# ========================
+api/target/
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+hs_err_pid*
+
+# ========================
+# Flutter / Dart
+# ========================
+edu_check/build/
+edu_check/.dart_tool/
+edu_check/.flutter-plugins
+edu_check/.flutter-plugins-dependencies
+edu_check/.pub-cache/
+edu_check/.pub/
+edu_check/**/doc/api/
+edu_check/.packages
+
+# ========================
+# Android
+# ========================
+edu_check/android/local.properties
+edu_check/android/.gradle/
+edu_check/android/captures/
+edu_check/android/gradlew
+edu_check/android/gradlew.bat
+edu_check/android/gradle/wrapper/gradle-wrapper.jar
+
+# ========================
+# iOS
+# ========================
+edu_check/ios/Pods/
+edu_check/ios/.symlinks/
+edu_check/ios/Flutter/Flutter.framework
+edu_check/ios/Flutter/Flutter.podspec
+
+# ========================
+# IDE
+# ========================
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/
+.metadata/
+
+# ========================
+# OS
+# ========================
+.DS_Store
+Thumbs.db
