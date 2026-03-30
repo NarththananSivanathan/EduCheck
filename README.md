@@ -146,5 +146,4 @@ flutter run
 
 ## Auteur
 
-**Narththanan SIVANATHAN**
-[LinkedIn](https://www.linkedin.com/in/narththanan-sivanathan/) · [GitHub](https://github.com/NarththananSivanathan)
+**BTS SIO (SLAM) 2024**
